@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Metamorphosis Design Free Css Templates</title>
+	<meta name="keywords" content="informática, programación, software, consultoría, bases de datos, outsourcing" />
+	<meta name="description" content="Empresa de servicios informáticos, consultoría, software, gestión de contenidos, servidores, seguridad informática" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" CONTENT="Ramón Bailén Sánchez">
+    <meta name="locality" content="Madrid, España, U.E." />
+    <meta name="lang" content="es">
+    <meta name="revisit-after" content="1 days">
+    <meta name="category" content="Spanish, Spain, Informática">
+	
+	<!-- Librería JS de Google -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	
+	<!-- Librería jQuery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+	<!-- CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+	
+	<!-- JS común a todas las páginas -->
+	<script type="text/javascript" src="js/comun.js"></script>
+	
+	<!-- Funcionalidad jQuery -->
+	<script type="text/javascript" src="js/jquery-index.js"></script>
+	
+	<!-- JS propio del index.html -->
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body onload="cargarRSS()">
+	<!-- Contenido de la página -->
+	<div id="content">
+
+		<!-- Cabecera-->
+		<div id="header"> 
+			<div id="logo">
+				<h1><a href="#">MiEmpresa</a></h1>
+				<h2><a href="http://www.exitae.com/" id="metamorph">Programación web a medida</a></h2>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#" title="">Inicio</a></li>
+					<li><a href="presupuesto.html" title="">Presupuesto</a></li>
+					<li><a href="galeria.html" title="">Galería</a></li>
+					<li><a href="localizacion.html" title="">Dónde estamos</a></li>
+					<li><a href="contacto.html" title="">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Secciones -->
+		<div id="main_top">
+			<div id="main">
+			
+				<!-- Sección de la derecha -->
+				<div id="right">
+						<h4><a href="#" onclick="cargarTabs(1)">La empresa</a> | <a href="#" onclick="cargarTabs(2)">Metodología</a> 
+							| <a href="#" onclick="cargarTabs(3)">Historia</a> | <a href="#" onclick="cargarTabs(4)">Personal</a></h4>
+					
+					<!-- Se cargará mediante AJAX el contenido de cada una de las pestañas -->
+					<div class="text">
+						<p>Empresa española de programación web con mas de 10 años de experiencia y los mejores profesionales, especializada en la prestación de servicios informáticos y consultoría tecnológica.</p>
+
+						<p>Basamos nuestro crecimiento en el de nuestros empleados, principal activo de la compañía. Conjugando buenas actitudes, nuestra dilatada experiencia y sólidos conocimientos tecnológicos, conseguimos aportar soluciones adecuadas a la realidad de negocio de nuestros clientes.</p>
+
+						<p>Nuestro objetivo es ganarnos su confianza y acompañarle en sus proyectos, en definitiva, convertirnos en su socio tecnológico.</p>
+					</div>
+					
+					<h4>Último trabajo</h4>
+					<div class="text">
+					<img src="images/pic01.jpg" alt="" title="" style="float:left; padding-right: 10px; padding-left: 10px;" />
+						<p>Programación de una web para una floristería de Madrid</p>
+						<p>En este trabajo se realizó la web en PHP y MYSQL con sistema de e-Commerce, gestión integral del contenido de la web mendiante un sistema de intranet para el cliente, y un sistema de control de stock y envío de flores a domicilio<br/><br/>Tiempo invertido desde la entrega del material por parte del cliente de 3 semanas.
+							. Precio de la web: 2000€</p>
+					</div>
+					
+					<div class="date">
+						<div class="dateright"><a href="#">Agosto, 2010</a></div>
+
+						<div class="dateleft">
+							<a href="#" id="more">Comentarios (2)</a>
+
+							<div id="comentarios">
+								<p class="coloc">Se nota que empleáis muchas horas en plantear soluciones a cada tipo de proyecto web</p>
+								<p>¡Enhorabuena, gran trabajo!</p>								   
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Sección de la izquierda -->
+				<div id="left">
+						<h3>Últimas noticias</h3>
+						<div id="categories">
+							&nbsp;
+						</div>
+						
+						<h3>Portafolio</h3>
+						<div id="partners">
+							<ul>
+								<li><a href="#" onmouseover="cargarPortfolio(1)" onmouseout="cargarPaginaVacia(1)">www.floresparatodos.com</a></li>
+								<div id="portfolio1"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(2)" onmouseout="cargarPaginaVacia(2)">www.google.com</a></li>
+								<div id="portfolio2"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(3)" onmouseout="cargarPaginaVacia(3)">www.mimartillo.com</a></li>
+								<div id="portfolio3"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(4)" onmouseout="cargarPaginaVacia(4)">www.spaentuvida.com</a></li>
+								<div id="portfolio4"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(5)" onmouseout="cargarPaginaVacia(5)">www.hoteles.com</a></li>
+								<div id="portfolio5"></div>							
+							</ul>
+						</div>	
+				</div>
+				
+				<div style="clear:both;"></div>
+			</div> 
+			
+			<div id="main_bottom"></div>
+		</div>
+   
+	</div>
+
+	<!-- Pie -->
+	<div id="footer">
+		<p>Página web de miempresa.com, desarrollada en HTML y JavaScript</p> 
+	</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Metamorphosis Design Free Css Templates</title>
+	<meta name="keywords" content="informática, programación, software, consultoría, bases de datos, outsourcing" />
+	<meta name="description" content="Empresa de servicios informáticos, consultoría, software, gestión de contenidos, servidores, seguridad informática" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" CONTENT="Ramón Bailén Sánchez">
+    <meta name="locality" content="Madrid, España, U.E." />
+    <meta name="lang" content="es">
+    <meta name="revisit-after" content="1 days">
+    <meta name="category" content="Spanish, Spain, Informática">
+	
+	<!-- Librería JS de Google -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	
+	<!-- Librería jQuery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+	<!-- Librería Google Maps -->
+	<script type="text/JavaScript" src="http://maps.google.com/maps/api/js?sensor=false&language=es"></script>
+	
+	<!-- CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+	
+	<!-- JS común a todas las páginas -->
+	<script type="text/javascript" src="js/comun.js"></script>
+	
+	<!-- JS propio del localizacion.html -->
+	<script type="text/javascript" src="js/localizacion.js"></script>
+</head>
+
+<body onload="cargarRSS(); cargarMapa();">
+	<!-- Contenido de la página -->
+	<div id="content">
+
+		<!-- Cabecera-->
+		<div id="header"> 
+			<div id="logo">
+				<h1><a href="#">MiEmpresa</a></h1>
+				<h2><a href="http://www.exitae.com/" id="metamorph">Programación web a medida</a></h2>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" title="">Inicio</a></li>
+					<li><a href="presupuesto.html" title="">Presupuesto</a></li>
+					<li><a href="galeria.html" title="">Galería</a></li>
+					<li><a href="#" title="">Dónde estamos</a></li>
+					<li><a href="contacto.html" title="">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Secciones -->
+		<div id="main_top">
+			<div id="main">
+			
+				<!-- Sección de la derecha -->
+				<div id="right">
+
+					<!-- Zona de la izquierda -->
+					<div class="izq">
+						<!-- Mapa -->
+						<div id="mapa"></div>
+					</div>
+
+					<!-- Zona de la derecha -->
+					<div class="der">
+						<table>
+							<tr>
+								<td><label class="sep3">Calle de los Madrazo 23, Madrid</label><td/>
+							</tr>
+							<tr>
+								<td class="sep3"><label>CP. 10054</label><td/>
+							</tr>
+						</table>
+					
+						<label class="may">CÓMO LLEGAR DESDE:</label>
+						<table>
+							<tr>
+								<td class="sep4"><input type="text" type="textbox" id="partida" value="" size="20"/><td/>
+								<td class="sep4"><input type="button" class="boton naranja" value="Buscar" onclick="calcularRuta()"/></td>
+							</tr>
+						</table>
+						
+						<!-- Ruta -->
+						<div id="ruta"></div>
+					</div>
+				</div>
+				
+				<!-- Sección de la izquierda -->
+				<div id="left">
+						<h3>Últimas noticias</h3>
+						<div id="categories">
+							&nbsp;
+						</div>
+						
+						<h3>Portafolio</h3>
+						<div id="partners">
+							<ul>
+								<li><a href="#" onmouseover="cargarPortfolio(1)" onmouseout="cargarPaginaVacia(1)">www.floresparatodos.com</a></li>
+								<div id="portfolio1"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(2)" onmouseout="cargarPaginaVacia(2)">www.google.com</a></li>
+								<div id="portfolio2"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(3)" onmouseout="cargarPaginaVacia(3)">www.mimartillo.com</a></li>
+								<div id="portfolio3"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(4)" onmouseout="cargarPaginaVacia(4)">www.spaentuvida.com</a></li>
+								<div id="portfolio4"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(5)" onmouseout="cargarPaginaVacia(5)">www.hoteles.com</a></li>
+								<div id="portfolio5"></div>							
+							</ul>
+						</div>	
+				</div>
+				
+				<div style="clear:both;"></div>
+			</div> 
+			
+			<div id="main_bottom"></div>
+		</div>
+   
+	</div>
+
+	<!-- Pie -->
+	<div id="footer">
+		<p>Página web de miempresa.com, desarrollada en HTML y JavaScript</p> 
+	</div>
+</body>
+</html>

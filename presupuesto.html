@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Metamorphosis Design Free Css Templates</title>
+	<meta name="keywords" content="informática, programación, software, consultoría, bases de datos, outsourcing" />
+	<meta name="description" content="Empresa de servicios informáticos, consultoría, software, gestión de contenidos, servidores, seguridad informática" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" CONTENT="Ramón Bailén Sánchez">
+    <meta name="locality" content="Madrid, España, U.E." />
+    <meta name="lang" content="es">
+    <meta name="revisit-after" content="1 days">
+    <meta name="category" content="Spanish, Spain, Informática">
+	
+	<!-- Librería JS de Google -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	
+	<!-- Librería jQuery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+	<!-- CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+	
+	<!-- JS común a todas las páginas -->
+	<script type="text/javascript" src="js/comun.js"></script>
+	
+	<!-- JS propio del presupuesto.html -->
+	<script type="text/javascript" src="js/presupuesto.js"></script>
+</head>
+
+<body onload="cargarRSS()">
+	<!-- Contenido de la página -->
+	<div id="content">
+
+		<!-- Cabecera-->
+		<div id="header"> 
+			<div id="logo">
+				<h1><a href="#">MiEmpresa</a></h1>
+				<h2><a href="http://www.exitae.com/" id="metamorph">Programación web a medida</a></h2>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" title="">Inicio</a></li>
+					<li><a href="#" title="">Presupuesto</a></li>
+					<li><a href="galeria.html" title="">Galería</a></li>
+					<li><a href="localizacion.html" title="">Dónde estamos</a></li>
+					<li><a href="contacto.html" title="">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Contenido -->
+		<div id="main_top">
+			<div id="main">
+			
+				<!-- Sección de la derecha -->
+				<div id="right">
+					<h4>Presupuesto</h4>
+
+					<!-- Formulario -->
+					<form name="formulario" id="presupuesto">
+						<p>DATOS</p>
+						<div class="pad">
+							<label>Nombre:</label><input type="text" id="nombre" size="74"/><br/>
+							<label>Apellidos:</label><input type="text" id="apellidos" size="74"/><br/>
+							<label>Teléfono de contacto:</label><input type="text" id="telefono" size="74"/><br/>
+							<label>Email:</label><input type="text" id="email" size="74"/>
+						</div>
+
+						<br/>
+						
+						<p>LA WEB</p>
+						<div class="pad">
+							<label>Tipo de página web:</label>
+							<select id="tipo" name="tipo" onchange="calcularTotal()">
+								<option value="">Seleccione una opción</option>
+								<option value="1">Tipo 1 (500 €)</option>
+								<option value="2">Tipo 2 (1000 €)</option>
+								<option value="3">Tipo 3 (1500 €)</option>
+							</select>
+						</div>
+
+						<label>Plazo en meses:</label><input type="number" id="plazo" min="1" max="4" value="1" class="valor" size="15" onchange="calcularTotal()"/><br/>
+
+						<label class="tam1">Marque las valores deseadas:</label><br/>
+						
+						<div class="opciones">
+							<label><input type="checkbox" name="valor1" value="somos" onchange="calcularTotal()"/> Quiénes somos</label>
+							<label><input type="checkbox" name="valor1" value="estamos" onchange="calcularTotal()"/> Dónde estamos</label>
+							<label><input type="checkbox" name="valor1" value="galeria" onchange="calcularTotal()"/> Galería de fotos</label>
+							<label><input type="checkbox" name="valor1" value="comerce" onchange="calcularTotal()"/> eComerce</label>
+							<label><input type="checkbox" name="valor1" value="gestion" onchange="calcularTotal()"/> Gestión interna</label>
+							<label><input type="checkbox" name="valor1" value="noticias" onchange="calcularTotal()"/> Noticias</label>
+							<label><input type="checkbox" name="valor1" value="facebook" onchange="calcularTotal()"/> Facebook</label>
+							<label><input type="checkbox" name="valor1" value="twitter" onchange="calcularTotal()"/> Twitter</label>
+						</div>
+
+						<div class="pad">
+							<p class="espacios">Presupuesto estimado:</p>
+							<label class="tam2">(recuerde que este presupuesto es estimo, dependiendo de la web podría aumentar o disminuir)</label><br/>
+							<input type="text" id="total" value="0 €"/>
+						</div>
+					</form>
+				</div>
+				
+				<!-- Sección de la izquierda -->
+				<div id="left">
+						<h3>Últimas noticias</h3>
+						<div id="categories">
+							&nbsp;
+						</div>
+						
+						<h3>Portafolio</h3>
+						<div id="partners">
+							<ul>
+								<li><a href="#" onmouseover="cargarPortfolio(1)" onmouseout="cargarPaginaVacia(1)">www.floresparatodos.com</a></li>
+								<div id="portfolio1"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(2)" onmouseout="cargarPaginaVacia(2)">www.google.com</a></li>
+								<div id="portfolio2"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(3)" onmouseout="cargarPaginaVacia(3)">www.mimartillo.com</a></li>
+								<div id="portfolio3"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(4)" onmouseout="cargarPaginaVacia(4)">www.spaentuvida.com</a></li>
+								<div id="portfolio4"></div>
+								
+								<li><a href="#" onmouseover="cargarPortfolio(5)" onmouseout="cargarPaginaVacia(5)">www.hoteles.com</a></li>
+								<div id="portfolio5"></div>							
+							</ul>
+						</div>	
+				</div>
+				
+				<div style="clear:both;"></div>
+			</div> 
+			
+			<div id="main_bottom"></div>
+		</div>
+   
+	</div>
+
+	<!-- Pie -->
+	<div id="footer">
+		<p>Página web de miempresa.com, desarrollada en HTML y JavaScript</p> 
+	</div>
+</body>
+</html>

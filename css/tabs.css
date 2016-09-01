@@ -1,0 +1,24 @@
+table{
+	width: 630px;
+	height: 50px;
+	border: 6px solid #E19D3D;
+	border-collapse: collapse;
+}
+
+tr, td{
+	border: 6px solid #E19D3D;
+	width: 210px;
+}
+
+table p{
+	padding: 5px;
+}
+
+.resaltado{
+	color:  #E19D3D;
+	font-weight: bold;
+}
+
+.estructura{
+	padding-left: 10px;
+}
